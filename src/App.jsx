@@ -1,6 +1,18 @@
+import Expertise from "./components/Expertise/Expertise";
+import Header from "./components/Header/Header";
+import Hero from "./components/Hero/Hero";
+import Works from "./components/Works/Works";
+import css from "./styles/app.module.scss"
+
 const App = () => {
-  //don't forget to add font link in index.html
-  return <h1>Subscribe Zainkeepscode</h1>;
+  return (
+    <div className={`bg-primary ${css.container}`} >
+      <Header  />
+      <Hero  />
+      <Expertise  />
+      <Works  />
+    </div>
+  )
 };
 
 export default App;

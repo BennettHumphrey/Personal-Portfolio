@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react";
 
 const useHeaderShadow = () => {
-const [headerShadow, setHeaderShadow] = useState(false)
-  //to handle shadow of header
+const [headerShadow, setHeaderShadow] = useState(false);
   useEffect(() => {
     function handleScroll() {
       if (window.scrollY > 0) {

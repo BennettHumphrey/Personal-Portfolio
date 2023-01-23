@@ -1,0 +1,5 @@
+-Fix Media query position in contents.scss and global.scss
+-Add more semantic HTML tags
+-Fix menu behavior
+-Fix responsiveness in general
+-Fix hero image movement
