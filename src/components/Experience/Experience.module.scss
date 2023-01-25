@@ -24,7 +24,15 @@
 
                 .role {
                     margin-left: 2rem;
-                }
+
+                    p {
+                        @media (max-width: $xs) {
+                            font-size: 0.8rem;
+                            line-height: 1.4;
+                        }
+                    }
+
+                }   
 
             }
 
@@ -38,7 +46,7 @@
 
                 .line {
                     position: absolute;
-                    height: 92%;
+                    height: 95%;
                     width: 2px;
                     background-image: linear-gradient(black 33%, rgba(255, 255, 255, 0) 0%);
                     background-position: right;

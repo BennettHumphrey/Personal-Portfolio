@@ -1,0 +1,71 @@
+@import '../../styles/constants.scss';
+
+.wrapper {
+
+    .container {
+
+        .header {
+            text-align: center;
+            padding-bottom: 3rem;
+        }
+
+        .skills {
+         
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 3rem;
+            padding: 2rem;
+
+            @media (max-width: $sm) {
+                gap: 0.8rem;
+                padding: 1rem 0.5rem;
+            }
+
+            .skill {
+
+                flex: 0 0 18%;
+
+                // Radial
+                >:nth-child(1) {
+                    display: block;
+                    margin: auto;
+                    width: 9vw;
+                    
+                    @media (max-width: $md) {
+                        width: 12vw;
+                    }
+                    
+                    @media (max-width: $sm) {
+                        width: 15vw;
+                    }
+
+                }
+
+                >:nth-child(2) {
+                    text-align: center;
+                    font-size: 1.3rem;
+                    font-weight: 500;
+                    word-wrap: break-word;
+
+                    @media (max-width: $md) {
+                        font-size: 1.1rem;
+                    }
+
+                    @media (max-width: $sm) {
+                        font-size: 0.9rem;
+                    }
+
+                    // @media (max-width: $xs) {
+                    //     font-size: 0.7rem;
+                    // }
+
+                }
+
+            }
+
+        }
+
+    }
+
+}

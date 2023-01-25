@@ -1,50 +1,58 @@
 import React from 'react'
 import css from './Header.module.scss'
-import { BiMenuAltRight, BiPhoneCall } from 'react-icons/bi'
 import { motion } from 'framer-motion'
-import { getMenuStyles, headerVariants } from '../../utils/motion'
-import { useState } from 'react'
-import useHeaderShadow from '../../hooks/useHeaderShadow'
+import { fadeIn, slideIn, staggerContainer } from '../../utils/motion'
+
 
 const Header = () => {
-
-    const [menuOpen, setMenuOpen] = useState(false);
-    const headerShadow = useHeaderShadow();
-
   return (
-    <motion.div 
+    <section className={`paddings ${css.wrapper}`}>
+        <motion.div 
+        variants={staggerContainer}
         initial="hidden"
         whileInView="show"
-        variants={headerVariants}
-        viewport={{once: false, amount: 0.25}}
-        className={`paddings ${css.wrapper}`}
-        style={{boxShadow: headerShadow}} >
-        <div className={`flexCenter innerWidth ${css.container}`} >
-            <div className={css.name} >
-                Binjan
-            </div>
-            <ul 
-            style={getMenuStyles(menuOpen)}
-            className={`flexCenter ${css.menu}`} >
-                <li><a href="">Services</a></li>
-                <li><a href="">Experience</a></li>
-                <li><a href="">Portfolio</a></li>
-                <li><a href="">Testimonials</a></li>
-                <li className={`flexCenter ${css.phone}`} >
-                    <p>555-555-5555</p>
-                    <BiPhoneCall size={40}/>
-                </li>
-            </ul>
-
-            <div
-            style={getMenuStyles(!menuOpen)} 
-            className={css.menuIcon}
-            onClick={() => setMenuOpen(!menuOpen)} >
-                <BiMenuAltRight size={30} />
+        viewport={{ once: false, amount: 0.25 }}
+        className={`innerWidth ${css.container}`} >
+            <div className={css.upperElements} >
+                <motion.span 
+                variants={fadeIn("right", "tween", 0.2, 1)}
+                className='primaryText' >Hello, <br/> I'm Ben.</motion.span>
+                <motion.span 
+                variants={fadeIn("left", "tween", 0.4, 1)}
+                className='secondaryText' >Lorem ipsum <br/> dolor sit amet.</motion.span>
             </div>
 
-        </div>
-    </motion.div>
+            <motion.div 
+            variants={fadeIn("up", "tween", 0.3, 1)}
+            className={css.person} >
+                <motion.img 
+                variants={slideIn("up", "tween", 0.5, 1.3)} 
+                src="./person.png" 
+                alt="Person" />
+            </motion.div>
+
+            <a className={css.email} href="mailto:bennetthumphrey98@gmail.com">bennetthumphrey98@gmail.com</a>
+
+            <div className={css.lowerElements} >
+                <motion.div 
+                variants={fadeIn("right", "tween", 0.3, 1)}
+                className={css.experience} >
+                    <div className='primaryText' >10</div>
+                    <div className='secondaryText' >
+                        <div>Years</div>
+                        <div>Experience</div>
+                    </div>
+                </motion.div>
+                {/* <motion.div
+                variants={fadeIn("left", "tween", 0.5, 1)}
+                className={css.certificate}>
+                    <img src="./certificate.png" alt="Certificate" />
+                    <span>Certified Pro</span>
+                    <span>Web Dev</span>
+                </motion.div> */}
+            </div>
+        </motion.div>
+    </section>
   )
 }
 

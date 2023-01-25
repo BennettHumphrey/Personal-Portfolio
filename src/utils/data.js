@@ -51,6 +51,41 @@ export const workExp = [
   },
 ];
 
+export const skills = [
+  {
+    name: "HTML",
+    percentage: 95,
+  },
+  {
+    name: "CSS",
+    percentage: 85,
+  },
+  {
+    name: "Tailwind",
+    percentage: 65,
+  },
+  {
+    name: "Javascript",
+    percentage: 80,
+  },
+  {
+    name: "HTML",
+    percentage: 95,
+  },
+  {
+    name: "CSS",
+    percentage: 85,
+  },
+  {
+    name: "Tailwind",
+    percentage: 65,
+  },
+  {
+    name: "Javascript",
+    percentage: 80,
+  },
+]
+
 export const comments = [
   {
     name: "Anamika Sandula",

@@ -1,10 +1,10 @@
 import React from 'react'
-import css from './Works.module.scss'
+import css from './Experience.module.scss'
 import { motion } from 'framer-motion'
 import { fadeIn, staggerContainer, textVariant2, zoomIn } from '../../utils/motion'
 import { workExp } from '../../utils/data'
 
-const Works = () => {
+const Experience = () => {
   return (
     <motion.section 
     variants={staggerContainer}
@@ -12,6 +12,7 @@ const Works = () => {
     whileInView="show"
     viewport={{once: false, amount: 0.25}}
     className={`paddings ${css.wrapper}`}>
+        <a className="anchor" id="work"></a>
         <div className={`flexCenter innerWidth ${css.container}`}>
             <span className="primaryText yPaddings">My Work Experience</span>
             <div className={`flexCenter ${css.experiences}`}>
@@ -50,4 +51,4 @@ const Works = () => {
   )
 }
 
-export default Works
+export default Experience

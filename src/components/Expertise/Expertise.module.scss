@@ -57,12 +57,13 @@
         }
 
         .rightSide {
-            @media (max-width: $sm) {
-                text-align: center;
-            }
             display: flex;
             flex-direction: column;
             gap: 2rem;
+            
+            @media (max-width: $sm) {
+                text-align: center;
+            }
 
             .stats {
                 justify-content: flex-start;
