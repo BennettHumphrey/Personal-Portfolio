@@ -3,53 +3,68 @@ import { CiMobile1 } from "react-icons/ci";
 import { MdWorkspacesOutline } from "react-icons/md";
 export const projectExperience = [
   {
-    name: "Website Design",
-    projects: 76,
+    name: "HTML & CSS Websites",
+    projects: 7,
     icon: HiOutlineDesktopComputer,
     bg: "#286F6C",
   },
   {
-    name: "Mobile App Design",
-    projects: 63,
-    icon: CiMobile1,
+    name: "React Website",
+    projects: 4,
+    icon: MdWorkspacesOutline,
     bg: "#EEC048",
   },
   {
-    name: "Brand Identity",
-    projects: 47,
-    icon: MdWorkspacesOutline,
+    name: "React Native Apps",
+    projects: 2,
+    icon: CiMobile1,
     bg: "#F26440",
   },
 ];
 
-export const WhatDoIHelp = [
-  "I will help you with finging a solution and solve your problem, We use process design to create digital products. Besides that also help their business.",
-  "We use process design to create digital products. Besides that also help their business",
+
+
+
+
+
+export const WhatDoIDo = [
+  "I love helping new, developing businesses by building websites or apps to help reach a wider audience, and make it easier for customers to interact with their favorite brands.",
 ];
+
+
+
+
+
 
 export const workExp = [
   {
-    place: "Self-Employed, Brisbane",
-    tenure: "Aug 2014 - Sep 2016",
-    role: "Visual Designer",
+    place: "Self-Employed, Digital",
+    tenure: "Dec 2022 - Present",
+    role: "Web Dev",
     detail:
-      "A visual desginer dsesign for a variety of platoforms, may include internet and internet sites, games, movies, kioasks and wearbies. In short, they create the concepts",
+      "A web developer, building responsive, optimized websites and apps for businesses, working mainly with React and React Native",
   },
-  {
-    place: "New Man Services",
-    tenure: "Aug 2014 - Sep 2016",
-    role: "UI/UX Designer",
-    detail:
-      "A visual desginer dsesign for a variety of platoforms, may include internet and internet sites, games, movies, kioasks and wearbies. In short, they create the concepts",
-  },
-  {
-    place: "Global Solution",
-    tenure: "Aug 2014 - Sep 2016",
-    role: "Sr. Product Designer",
-    detail:
-      "A visual desginer dsesign for a variety of platoforms, may include internet and internet sites, games, movies, kioasks and wearbies. In short, they create the concepts",
-  },
+  // {
+  //   place: "Self-Employed, Digital",
+  //   tenure: "Dec 2022 - Present",
+  //   role: "Web Dev",
+  //   detail:
+  //     "A web developer, building responsive, optimized websites and apps for businesses, working mainly with React and React Native",
+  // },
+  // {
+  //   place: "Self-Employed, Digital",
+  //   tenure: "Dec 2022 - Present",
+  //   role: "Web Dev",
+  //   detail:
+  //     "A web developer, building responsive, optimized websites and apps for businesses, working mainly with React and React Native",
+  // },
 ];
+
+
+
+
+
+
 
 export const skills = [
   {
@@ -61,20 +76,8 @@ export const skills = [
     percentage: 85,
   },
   {
-    name: "Tailwind",
-    percentage: 65,
-  },
-  {
-    name: "Javascript",
-    percentage: 80,
-  },
-  {
-    name: "HTML",
-    percentage: 95,
-  },
-  {
-    name: "CSS",
-    percentage: 85,
+    name: "SCSS",
+    percentage: 75,
   },
   {
     name: "Tailwind",
@@ -83,74 +86,112 @@ export const skills = [
   {
     name: "Javascript",
     percentage: 80,
+  },
+  {
+    name: "React",
+    percentage: 75,
+  },
+  {
+    name: "React Native",
+    percentage: 65,
   },
 ]
 
+
+
+
+
+
+
+
+
 export const comments = [
   {
-    name: "Anamika Sandula",
+    name: "Michael Smith",
     post: "Creative Manager",
     comment:
-      "Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    img: "./people2.png",
-  },
-  {
-    name: "Anamika Sandula",
-    post: "Creative Manager",
-    comment:
-      "Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus vero incidunt earum beatae exercitationem architecto nobis numquam unde.",
     img: "./people1.png",
   },
   {
-    name: "Anamika Sandula",
+    name: "Michael Smith",
     post: "Creative Manager",
     comment:
-      "Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus vero incidunt earum beatae exercitationem architecto nobis numquam unde.",
     img: "./people2.png",
   },
   {
-    name: "Anamika Sandula",
+    name: "Michael Smith",
     post: "Creative Manager",
     comment:
-      "Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus vero incidunt earum beatae exercitationem architecto nobis numquam unde.",
     img: "./people1.png",
   },
   {
-    name: "Anamika Sandula",
+    name: "Michael Smith",
     post: "Creative Manager",
     comment:
-      "Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus vero incidunt earum beatae exercitationem architecto nobis numquam unde.",
     img: "./people2.png",
   },
   {
-    name: "Anamika Sandula",
+    name: "Michael Smith",
     post: "Creative Manager",
     comment:
-      "Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus vero incidunt earum beatae exercitationem architecto nobis numquam unde.",
     img: "./people1.png",
   },
   {
-    name: "Anamika Sandula",
+    name: "Michael Smith",
     post: "Creative Manager",
     comment:
-      "Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    img: "./people2.png",
-  },
-  {
-    name: "Anamika Sandula",
-    post: "Creative Manager",
-    comment:
-      "Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    img: "./people1.png",
-  },
-  {
-    name: "Anamika Sandula",
-    post: "Creative Manager",
-    comment:
-      "Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus vero incidunt earum beatae exercitationem architecto nobis numquam unde.",
     img: "./people2.png",
   },
 ];
+
+
+
+
+
+
+
+export const projects = [
+  {
+    id: 'react1',
+    title: "A TITLE",
+    type: "site",
+    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi molestias exercitationem aspernatur fugit. Placeat unde nostrum corporis animi, aspernatur mollitia tempore adipisci autem? Quisquam omnis nam modi ullam distinctio placeat praesentium. Quasi vel beatae placeat dicta eaque amet exercitationem ipsam facilis, corporis aperiam aliquid corrupti consectetur et vero ab tenetur, labore consequuntur totam ad? Quae, quasi. Minus laboriosam modi dolore perferendis. Repellendus id nisi laboriosam nihil, eos, eius voluptatum odio neque similique voluptatem eveniet maiores.",
+    mainscreenshotSrc: "./showcase1.png",
+    screenshots: ["./showcase2.png", "./showcase3.png", "./showcase2.png", "./showcase3.png",],
+    showcase: true,
+  },
+  {
+    id: 'react2',
+    title: "B TITLE",
+    type: "site",
+    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi molestias exercitationem aspernatur fugit. Placeat unde nostrum corporis animi, aspernatur mollitia tempore adipisci autem? Quisquam omnis nam modi ullam distinctio placeat praesentium. Quasi vel beatae placeat dicta eaque amet exercitationem ipsam facilis, corporis aperiam aliquid corrupti consectetur et vero ab tenetur, labore consequuntur totam ad? Quae, quasi. Minus laboriosam modi dolore perferendis. Repellendus id nisi laboriosam nihil, eos, eius voluptatum odio neque similique voluptatem eveniet maiores.",
+    mainscreenshotSrc: "./showcase2.png",
+    screenshots: ["./showcase2.png", "./showcase3.png", "./showcase2.png", "./showcase3.png",],
+    showcase: true,
+  },
+  {
+    id: 'reactNative1',
+    title: "C TITLE",
+    type: "app",
+    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi molestias exercitationem aspernatur fugit. Placeat unde nostrum corporis animi, aspernatur mollitia tempore adipisci autem? Quisquam omnis nam modi ullam distinctio placeat praesentium. Quasi vel beatae placeat dicta eaque amet exercitationem ipsam facilis, corporis aperiam aliquid corrupti consectetur et vero ab tenetur, labore consequuntur totam ad? Quae, quasi. Minus laboriosam modi dolore perferendis. Repellendus id nisi laboriosam nihil, eos, eius voluptatum odio neque similique voluptatem eveniet maiores.",
+    mainscreenshotSrc: "./showcase3.png",
+    screenshots: ["./showcase2.png", "./showcase3.png", "./showcase2.png", "./showcase3.png",],
+    showcase: true,
+  },
+]
+
+
+
+
+
+
+
 
 export const sliderSettings = {
   dots: true,

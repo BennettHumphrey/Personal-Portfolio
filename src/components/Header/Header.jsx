@@ -19,7 +19,7 @@ const Header = () => {
                 className='primaryText' >Hello, <br/> I'm Ben.</motion.span>
                 <motion.span 
                 variants={fadeIn("left", "tween", 0.4, 1)}
-                className='secondaryText' >Lorem ipsum <br/> dolor sit amet.</motion.span>
+                className='secondaryText' >Let me help you <br/> build your brand</motion.span>
             </div>
 
             <motion.div 
@@ -37,9 +37,9 @@ const Header = () => {
                 <motion.div 
                 variants={fadeIn("right", "tween", 0.3, 1)}
                 className={css.experience} >
-                    <div className='primaryText' >10</div>
+                    <div className='primaryText' >1</div>
                     <div className='secondaryText' >
-                        <div>Years</div>
+                        <div>Year</div>
                         <div>Experience</div>
                     </div>
                 </motion.div>

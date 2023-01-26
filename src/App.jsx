@@ -7,6 +7,7 @@ import Reviews from "./components/Reviews/Reviews";
 import Experience from "./components/Experience/Experience";
 import css from "./styles/app.module.scss"
 import Skills from "./components/Skills/Skills";
+import ProjectShowcase from "./components/ProjectShowcase/ProjectShowcase";
 
 const App = () => {
   return (
@@ -17,7 +18,8 @@ const App = () => {
       <Experience  />
       <Skills  />
       <Portfolio  />
-      <Reviews  />
+      {/* <ProjectShowcase  /> */}
+      {/* <Reviews  /> */}
       <Footer  />
     </div>
   )

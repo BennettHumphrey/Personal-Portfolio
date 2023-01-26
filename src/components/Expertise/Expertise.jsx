@@ -1,5 +1,5 @@
 import React from 'react'
-import { projectExperience, WhatDoIHelp } from '../../utils/data'
+import { projectExperience, WhatDoIDo } from '../../utils/data'
 import css from './Expertise.module.scss'
 import { motion } from 'framer-motion'
 import { fadeIn, staggerContainer, textVariant } from '../../utils/motion'
@@ -40,7 +40,7 @@ const Expertise = () => {
             className={css.rightSide} >
                 <span className='primaryText' >What do I do?</span>
                 {
-                    WhatDoIHelp.map((p, i) => {
+                    WhatDoIDo.map((p, i) => {
                         return (
                             <span className='secondaryText' key={i} >{p}</span>
                         )

@@ -1,4 +1,5 @@
--Fix responsiveness in general
+-ProjectShowcase functionality
 -Footer menu does nothing
--Add motion in "Skills" Component
+-ProjectShowcase motion
+-Skills motion
 -Fix content

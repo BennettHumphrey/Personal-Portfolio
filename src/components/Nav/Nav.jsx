@@ -42,10 +42,10 @@ const Nav = () => {
                 <li><a href="#work">Experience</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#reviews">Testimonials</a></li>
-                <li className={`flexCenter ${css.phone}`} >
+                {/* <li className={`flexCenter ${css.phone}`} >
                     <p>555-555-5555</p>
                     <BiPhoneCall size={40}/>
-                </li>
+                </li> */}
             </ul>
 
             <div
