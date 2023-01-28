@@ -4,13 +4,16 @@ import { motion } from 'framer-motion'
 import { fadeIn, staggerContainer } from '../../utils/motion'
 import { projects } from '../../utils/data'
 import ProjectShowcase from '../ProjectShowcase/ProjectShowcase'
+import MoreWorks from '../MoreWorks/MoreWorks'
 
 const Portfolio = () => {
 
     const [selectedProject, setSelectedProject] = useState(null);
+    const [showMoreWorks, setShowMoreWorks] = useState(false);
 
     const showcaseProjects = projects.filter(x => x.showcase === true);
-    // console.log(showcaseProjects)
+    const extraProjects = projects.filter(x => x.showcase === false);
+
   return (
     <>
         <motion.section 
@@ -26,27 +29,37 @@ const Portfolio = () => {
                         <span className='primaryText' >My latest works</span>
                         <p style={{marginTop: "10px"}} >Great solutions</p>
                     </div>
-                    <span className="secondaryText">Explore More Works</span>
+                    <a 
+                    className="secondaryText"
+                    href="#moreWorks"
+                    onMouseDown={() => {
+                        setShowMoreWorks(true);
+                    }}
+                    >Explore More Works</a>
                 </div>
     
                 <div className={`flexCenter ${css.showcase}`}>
                     {
                         showcaseProjects.map((p, i) => (
-                            <motion.img
-                            key={i}
-                            src={p.mainscreenshotSrc}
-                            variants={fadeIn("up", "tween", 0.5, 0.6)} 
-                            alt={`Project ${i} screenshot`} 
-                            onMouseDown={() => {
-                                setSelectedProject(p);
-                            }}
-                            />
+                            <a 
+                            key={i} 
+                            href="#projectShowcase">
+                                <motion.img
+                                src={p.mainscreenshotSrc}
+                                variants={fadeIn("up", "tween", 0.1+i/3, 0.6)}
+                                alt={`Project ${i} screenshot`}
+                                onMouseDown={() => {
+                                    setSelectedProject(p);
+                                }}
+                                />
+                            </a>
                         ))
                     }
                 </div>
     
             </div>
         </motion.section>
+        {showMoreWorks && <MoreWorks extraProjects={extraProjects} setSelectedProject={setSelectedProject} />}
         {selectedProject && <ProjectShowcase project={selectedProject} />}
     </>
   )

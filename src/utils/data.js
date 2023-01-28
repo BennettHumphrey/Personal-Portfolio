@@ -1,6 +1,6 @@
 import { HiOutlineDesktopComputer } from "react-icons/hi";
-import { CiMobile1 } from "react-icons/ci";
 import { MdWorkspacesOutline } from "react-icons/md";
+import { BiMobileAlt } from "react-icons/bi";
 export const projectExperience = [
   {
     name: "HTML & CSS Websites",
@@ -9,7 +9,7 @@ export const projectExperience = [
     bg: "#286F6C",
   },
   {
-    name: "React Website",
+    name: "React Websites",
     projects: 4,
     icon: MdWorkspacesOutline,
     bg: "#EEC048",
@@ -17,7 +17,7 @@ export const projectExperience = [
   {
     name: "React Native Apps",
     projects: 2,
-    icon: CiMobile1,
+    icon: BiMobileAlt,
     bg: "#F26440",
   },
 ];
@@ -161,6 +161,7 @@ export const projects = [
     id: 'react1',
     title: "A TITLE",
     type: "site",
+    tech: "React, CSS",
     description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi molestias exercitationem aspernatur fugit. Placeat unde nostrum corporis animi, aspernatur mollitia tempore adipisci autem? Quisquam omnis nam modi ullam distinctio placeat praesentium. Quasi vel beatae placeat dicta eaque amet exercitationem ipsam facilis, corporis aperiam aliquid corrupti consectetur et vero ab tenetur, labore consequuntur totam ad? Quae, quasi. Minus laboriosam modi dolore perferendis. Repellendus id nisi laboriosam nihil, eos, eius voluptatum odio neque similique voluptatem eveniet maiores.",
     mainscreenshotSrc: "./showcase1.png",
     screenshots: ["./showcase2.png", "./showcase3.png", "./showcase2.png", "./showcase3.png",],
@@ -170,6 +171,7 @@ export const projects = [
     id: 'react2',
     title: "B TITLE",
     type: "site",
+    tech: "React, CSS",
     description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi molestias exercitationem aspernatur fugit. Placeat unde nostrum corporis animi, aspernatur mollitia tempore adipisci autem? Quisquam omnis nam modi ullam distinctio placeat praesentium. Quasi vel beatae placeat dicta eaque amet exercitationem ipsam facilis, corporis aperiam aliquid corrupti consectetur et vero ab tenetur, labore consequuntur totam ad? Quae, quasi. Minus laboriosam modi dolore perferendis. Repellendus id nisi laboriosam nihil, eos, eius voluptatum odio neque similique voluptatem eveniet maiores.",
     mainscreenshotSrc: "./showcase2.png",
     screenshots: ["./showcase2.png", "./showcase3.png", "./showcase2.png", "./showcase3.png",],
@@ -179,10 +181,81 @@ export const projects = [
     id: 'reactNative1',
     title: "C TITLE",
     type: "app",
+    tech: "React Native, CSS",
     description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi molestias exercitationem aspernatur fugit. Placeat unde nostrum corporis animi, aspernatur mollitia tempore adipisci autem? Quisquam omnis nam modi ullam distinctio placeat praesentium. Quasi vel beatae placeat dicta eaque amet exercitationem ipsam facilis, corporis aperiam aliquid corrupti consectetur et vero ab tenetur, labore consequuntur totam ad? Quae, quasi. Minus laboriosam modi dolore perferendis. Repellendus id nisi laboriosam nihil, eos, eius voluptatum odio neque similique voluptatem eveniet maiores.",
     mainscreenshotSrc: "./showcase3.png",
     screenshots: ["./showcase2.png", "./showcase3.png", "./showcase2.png", "./showcase3.png",],
     showcase: true,
+  },
+  {
+    id: 'react4',
+    title: "D TITLE",
+    type: "site",
+    tech: "React, CSS",
+    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi molestias exercitationem aspernatur fugit. Placeat unde nostrum corporis animi, aspernatur mollitia tempore adipisci autem? Quisquam omnis nam modi ullam distinctio placeat praesentium. Quasi vel beatae placeat dicta eaque amet exercitationem ipsam facilis, corporis aperiam aliquid corrupti consectetur et vero ab tenetur, labore consequuntur totam ad? Quae, quasi. Minus laboriosam modi dolore perferendis. Repellendus id nisi laboriosam nihil, eos, eius voluptatum odio neque similique voluptatem eveniet maiores.",
+    mainscreenshotSrc: "./showcase1.png",
+    screenshots: ["./showcase2.png", "./showcase3.png", "./showcase2.png", "./showcase3.png",],
+    showcase: false,
+  },
+  {
+    id: 'react5',
+    title: "E TITLE",
+    type: "site",
+    tech: "React, CSS",
+    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi molestias exercitationem aspernatur fugit. Placeat unde nostrum corporis animi, aspernatur mollitia tempore adipisci autem? Quisquam omnis nam modi ullam distinctio placeat praesentium. Quasi vel beatae placeat dicta eaque amet exercitationem ipsam facilis, corporis aperiam aliquid corrupti consectetur et vero ab tenetur, labore consequuntur totam ad? Quae, quasi. Minus laboriosam modi dolore perferendis. Repellendus id nisi laboriosam nihil, eos, eius voluptatum odio neque similique voluptatem eveniet maiores.",
+    mainscreenshotSrc: "./showcase2.png",
+    screenshots: ["./showcase2.png", "./showcase3.png", "./showcase2.png", "./showcase3.png",],
+    showcase: false,
+  },
+  {
+    id: 'reactNative2',
+    title: "F TITLE",
+    type: "app",
+    tech: "React Native, CSS",
+    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi molestias exercitationem aspernatur fugit. Placeat unde nostrum corporis animi, aspernatur mollitia tempore adipisci autem? Quisquam omnis nam modi ullam distinctio placeat praesentium. Quasi vel beatae placeat dicta eaque amet exercitationem ipsam facilis, corporis aperiam aliquid corrupti consectetur et vero ab tenetur, labore consequuntur totam ad? Quae, quasi. Minus laboriosam modi dolore perferendis. Repellendus id nisi laboriosam nihil, eos, eius voluptatum odio neque similique voluptatem eveniet maiores.",
+    mainscreenshotSrc: "./showcase3.png",
+    screenshots: ["./showcase2.png", "./showcase3.png", "./showcase2.png", "./showcase3.png",],
+    showcase: false,
+  },
+  {
+    id: 'react5',
+    title: "E TITLE",
+    type: "site",
+    tech: "React, CSS",
+    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi molestias exercitationem aspernatur fugit. Placeat unde nostrum corporis animi, aspernatur mollitia tempore adipisci autem? Quisquam omnis nam modi ullam distinctio placeat praesentium. Quasi vel beatae placeat dicta eaque amet exercitationem ipsam facilis, corporis aperiam aliquid corrupti consectetur et vero ab tenetur, labore consequuntur totam ad? Quae, quasi. Minus laboriosam modi dolore perferendis. Repellendus id nisi laboriosam nihil, eos, eius voluptatum odio neque similique voluptatem eveniet maiores.",
+    mainscreenshotSrc: "./showcase2.png",
+    screenshots: ["./showcase2.png", "./showcase3.png", "./showcase2.png", "./showcase3.png",],
+    showcase: false,
+  },
+  {
+    id: 'reactNative2',
+    title: "F TITLE",
+    type: "app",
+    tech: "React Native, CSS",
+    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi molestias exercitationem aspernatur fugit. Placeat unde nostrum corporis animi, aspernatur mollitia tempore adipisci autem? Quisquam omnis nam modi ullam distinctio placeat praesentium. Quasi vel beatae placeat dicta eaque amet exercitationem ipsam facilis, corporis aperiam aliquid corrupti consectetur et vero ab tenetur, labore consequuntur totam ad? Quae, quasi. Minus laboriosam modi dolore perferendis. Repellendus id nisi laboriosam nihil, eos, eius voluptatum odio neque similique voluptatem eveniet maiores.",
+    mainscreenshotSrc: "./showcase3.png",
+    screenshots: ["./showcase2.png", "./showcase3.png", "./showcase2.png", "./showcase3.png",],
+    showcase: false,
+  },
+  {
+    id: 'react5',
+    title: "E TITLE",
+    type: "site",
+    tech: "React, CSS",
+    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi molestias exercitationem aspernatur fugit. Placeat unde nostrum corporis animi, aspernatur mollitia tempore adipisci autem? Quisquam omnis nam modi ullam distinctio placeat praesentium. Quasi vel beatae placeat dicta eaque amet exercitationem ipsam facilis, corporis aperiam aliquid corrupti consectetur et vero ab tenetur, labore consequuntur totam ad? Quae, quasi. Minus laboriosam modi dolore perferendis. Repellendus id nisi laboriosam nihil, eos, eius voluptatum odio neque similique voluptatem eveniet maiores.",
+    mainscreenshotSrc: "./showcase2.png",
+    screenshots: ["./showcase2.png", "./showcase3.png", "./showcase2.png", "./showcase3.png",],
+    showcase: false,
+  },
+  {
+    id: 'reactNative2',
+    title: "F TITLE",
+    type: "app",
+    tech: "React Native, CSS",
+    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi molestias exercitationem aspernatur fugit. Placeat unde nostrum corporis animi, aspernatur mollitia tempore adipisci autem? Quisquam omnis nam modi ullam distinctio placeat praesentium. Quasi vel beatae placeat dicta eaque amet exercitationem ipsam facilis, corporis aperiam aliquid corrupti consectetur et vero ab tenetur, labore consequuntur totam ad? Quae, quasi. Minus laboriosam modi dolore perferendis. Repellendus id nisi laboriosam nihil, eos, eius voluptatum odio neque similique voluptatem eveniet maiores.",
+    mainscreenshotSrc: "./showcase3.png",
+    screenshots: ["./showcase2.png", "./showcase3.png", "./showcase2.png", "./showcase3.png",],
+    showcase: false,
   },
 ]
 
@@ -193,7 +266,32 @@ export const projects = [
 
 
 
-export const sliderSettings = {
+export const moreWorksSliderSettings = {
+  dots: true,
+  infinite: true,
+  speed: 1000,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  initialSlide: 0,
+  touchMove: true,
+  useCSS: true, 
+
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 3,
+      },
+    },
+    {
+      breakpoint: 420,
+      settings: {
+        slidesToShow: 2,
+      },
+    },
+  ],
+};
+export const reviewSliderSettings = {
   dots: true,
   infinite: false,
   speed: 1000,
@@ -201,7 +299,7 @@ export const sliderSettings = {
   slidesToScroll: 1,
   initialSlide: 0,
   touchMove: true,
-  useCSS: true,
+  useCSS: true, 
 
   responsive: [
     {

@@ -1,5 +1,6 @@
 -ProjectShowcase functionality
 -Footer menu does nothing
 -ProjectShowcase motion
+-MoreWorks motion
 -Skills motion
 -Fix content

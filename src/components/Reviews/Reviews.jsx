@@ -3,7 +3,7 @@ import css from './Reviews.module.scss'
 import { motion } from 'framer-motion'
 import { footerVariants, staggerContainer } from '../../utils/motion'
 import Slider from 'react-slick'
-import { comments, sliderSettings } from '../../utils/data'
+import { comments, reviewSliderSettings } from '../../utils/data'
 
 const Reviews = () => {
   return (
@@ -25,7 +25,7 @@ const Reviews = () => {
 
             <div className={`yPaddings ${css.comments}`}>
                 <Slider  
-                    {...sliderSettings}
+                    {...reviewSliderSettings}
                     className={css.slider}
                     >
                         {comments.map((c, i) => {
