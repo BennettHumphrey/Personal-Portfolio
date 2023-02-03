@@ -3,7 +3,7 @@ import css from './MoreWorks.module.scss'
 import { motion } from 'framer-motion'
 import { fadeIn, footerVariants, staggerContainer } from '../../utils/motion'
 import Slider from 'react-slick'
-import { moreWorksSliderSettings } from '../../utils/data'
+import { moreWorksSliderSettings, imageSizes } from '../../utils/data'
 
 const MoreWorks = ({extraProjects, setSelectedProject}) => {
 
@@ -38,7 +38,10 @@ const MoreWorks = ({extraProjects, setSelectedProject}) => {
                                         setSelectedProject(p);
                                     }}
                                     >
-                                        <img src={p.mainscreenshotSrc} alt={`Screenshot ${i}`} />
+                                        <img 
+                                        srcset={p.mainscreenshotSrc} 
+                                        sizes={imageSizes.moreWorks}
+                                        alt={`Screenshot ${i+1}`} />
                                         <div className={`flexCenter ${css.tech}`}>
                                             <p>{p.tech}</p>
                                         </div>

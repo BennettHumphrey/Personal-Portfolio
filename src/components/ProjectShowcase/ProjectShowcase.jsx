@@ -2,7 +2,7 @@ import React from 'react'
 import css from './ProjectShowcase.module.scss'
 import { motion } from 'framer-motion'
 import { fadeIn, staggerContainer } from '../../utils/motion'
-import { projects } from '../../utils/data'
+import { imageSizes, projects } from '../../utils/data'
 
 const ProjectShowcase = ({ project }) => {
 
@@ -47,8 +47,9 @@ const ProjectShowcase = ({ project }) => {
                     {
                         project.screenshots.map((p, i) => (
                             <motion.img 
-                            src={p} 
-                            alt={`Screenshot ${i}`} 
+                            srcSet={p} 
+                            sizes={imageSizes.projectShowcase}
+                            alt={`Screenshot ${i+1}`} 
                             key={i}
                             variants={fadeIn("up", "tween", 0.6+i/15, 0.4)} />
                         ))
