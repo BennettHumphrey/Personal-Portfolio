@@ -66,31 +66,37 @@
         .person {
             
             position: absolute;
-            bottom: -2rem;
+            bottom: 0;
+            height: 75%;
+            bottom: 7rem;
             margin: auto;
-            background-image: url('./splash.png');
-            background-repeat: no-repeat;
-            background-size: 23rem;
             left: 33%;
+            z-index: -1;
+
+            >img {
+                border-radius: 85px;
+                background-image: url('../../../public/splash.png'); 
+                background-repeat: no-repeat;
+                background-size: 23rem;
+
+                @media (max-width: $sm) {
+                    width: 20rem;
+                }
+            }
             
             @media (max-width: $md) {
                 position: relative;
                 left: 0;
-                background-size: 20rem;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 background-position: bottom;
             }
 
-            .person {
-                margin-bottom: -5px;
-
-                @media (max-width: $sm) {
-                    width: 23rem;
-                }
-
+            @media (max-width: $sm) {
+                bottom: -1rem;
             }
+            
 
         }
 

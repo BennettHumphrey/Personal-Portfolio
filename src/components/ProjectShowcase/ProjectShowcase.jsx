@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import css from './ProjectShowcase.module.scss'
 import { motion } from 'framer-motion'
 import { fadeIn, staggerContainer } from '../../utils/motion'
@@ -6,7 +6,11 @@ import { imageSizes, projects } from '../../utils/data'
 
 const ProjectShowcase = ({ project }) => {
 
-    // const project = projects[0];
+    const [projectType, setProjectType] = useState('');
+    //For some reason this is necessary to update when it should and shouldn't render 'view deployed site'
+    useEffect(() => {
+        setProjectType(project.type);
+    }, [project])
 
   return (
     <>
@@ -28,11 +32,11 @@ const ProjectShowcase = ({ project }) => {
                     <div className={`flexCenter ${css.mediaSection}`} >
                         <div className={css.links} >
                             <motion.div  variants={fadeIn("down", "tween", 0.8, 0.9)} >
-                                <a href="">View GitHub</a>
+                                <a  target="blank" href={project.githubSrc}>View GitHub</a>
                             </motion.div>
-                            <motion.div  variants={fadeIn("down", "tween", 0.9, 0.8)} >
-                                <a href="">View deployed site</a>
-                            </motion.div>
+                            {projectType === "site" && <motion.div  variants={fadeIn("down", "tween", 0.9, 0.8)} >
+                                <a target="blank" href={project.deployedSrc}>View deployed site</a>
+                            </motion.div>}
                         </div>
                         <div className={css.media} >
                             <motion.img

@@ -1,3 +1,2 @@
--Footer menu does nothing
--Fix content
--Properly deploy sites
+-Link insta?
+-onClick is a bit strange

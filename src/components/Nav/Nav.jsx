@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react'
 import css from './Nav.module.scss'
-import { BiMenuAltRight, BiPhoneCall } from 'react-icons/bi'
+import { BiMenuAltRight } from 'react-icons/bi'
 import { motion } from 'framer-motion'
 import { getMenuStyles, headerVariants } from '../../utils/motion'
 import useHeaderShadow from '../../hooks/useHeaderShadow'
@@ -28,11 +28,11 @@ const Nav = () => {
         whileInView="show"
         variants={headerVariants}
         viewport={{once: false, amount: 0.25}}
-        className={`paddings ${css.wrapper}`}
+        className={css.wrapper}
         style={{boxShadow: headerShadow}} >
         <div className={`flexCenter innerWidth ${css.container}`} >
             <p className={css.name} >
-                Ben
+                Bennett Humphrey
             </p>
             <ul
             ref={menuRef} 
@@ -41,7 +41,7 @@ const Nav = () => {
                 <li><a href="#expertise">Services</a></li>
                 <li><a href="#work">Experience</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#reviews">Testimonials</a></li>
+                {/* <li><a href="#reviews">Testimonials</a></li> */}
                 {/* <li className={`flexCenter ${css.phone}`} >
                     <p>555-555-5555</p>
                     <BiPhoneCall size={40}/>
@@ -51,7 +51,11 @@ const Nav = () => {
             <div
             style={getMenuStyles(!menuOpen)} 
             className={css.menuIcon}
-            onMouseDown={() => setMenuOpen(!menuOpen)} >
+            onClick={() => setMenuOpen(!menuOpen)}
+            onTouchEnd={(e) => {
+                setMenuOpen(!menuOpen)
+                e.preventDefault();
+            }} >
                 {width <= 768 ? <BiMenuAltRight size={30} /> : null}
             </div>
 

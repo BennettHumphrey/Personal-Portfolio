@@ -25,7 +25,8 @@ const Skills = () => {
                     key={i} 
                     className={css.skill}
                     variants={fadeIn("up", "tween", i/5, 0.8)} >
-                      <CircularProgressbar styles={buildStyles({pathColor: '#F26042', textColor: '#0D2F3F'})} value={s.percentage} text={`${s.percentage}%`} />;
+                      <CircularProgressbar styles={buildStyles({pathColor: '#F26042', textColor: '#0D2F3F'})} value={s.percentage} text={`${s.percentage}%`} />
+                      <br/>
                       <p>{s.name}</p>
                     </motion.div>
                 ))}

@@ -27,12 +27,15 @@ const Portfolio = () => {
                 <div className={`flexCenter ${css.heading}`}>
                     <div>
                         <span className='primaryText' >My latest works</span>
-                        <p style={{marginTop: "10px"}} >Great solutions</p>
+                        {/* <p style={{marginTop: "10px"}} >Great solutions</p> */}
                     </div>
                     <a 
                     className="secondaryText"
                     href="#moreWorks"
-                    onMouseDown={() => {
+                    onClick={() => {
+                        setShowMoreWorks(true);
+                    }}
+                    onTouchEnd={() => {
                         setShowMoreWorks(true);
                     }}
                     >Explore More Works</a>
@@ -48,7 +51,10 @@ const Portfolio = () => {
                                 src={p.mainscreenshotSrc}
                                 variants={fadeIn("up", "tween", 0.1+i/3, 0.6)}
                                 alt={`Project ${i} screenshot`}
-                                onMouseDown={() => {
+                                onClick={() => {
+                                    setSelectedProject(p);
+                                }}
+                                onTouchEnd={() => {
                                     setSelectedProject(p);
                                 }}
                                 />

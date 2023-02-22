@@ -27,7 +27,7 @@
                 transition: all 200ms ease-out;
                 
                 &:hover {
-                    cursor: pointer;
+                    // cursor: pointer;
                     box-shadow: 0px 21px 13px rgba(0, 0, 0, 0.04);
                 }
 
@@ -66,7 +66,7 @@
             }
 
             .stats {
-                justify-content: flex-start;
+                justify-content: center;
                 gap: 4rem;
 
                 .stat {

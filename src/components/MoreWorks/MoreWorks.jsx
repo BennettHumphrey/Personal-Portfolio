@@ -34,12 +34,15 @@ const MoreWorks = ({extraProjects, setSelectedProject}) => {
                                     variants={fadeIn("left", "tween", 0.1+i/2, 0.5)}
                                     key={i}
                                     className={css.project}
-                                    onMouseDown={() => {
+                                    onClick={() => {
+                                        setSelectedProject(p);
+                                    }}
+                                    onTouchEnd={() => {
                                         setSelectedProject(p);
                                     }}
                                     >
                                         <img 
-                                        srcset={p.mainscreenshotSrc} 
+                                        srcSet={p.mainscreenshotSrc} 
                                         sizes={imageSizes.moreWorks}
                                         alt={`Screenshot ${i+1}`} />
                                         <div className={`flexCenter ${css.tech}`}>
