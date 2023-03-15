@@ -7,13 +7,13 @@ import { srcsets } from "../../public/srcsets";
 export const projectExperience = [
   {
     name: "HTML & CSS Websites",
-    projects: 5,
+    projects: 6,
     icon: HiOutlineDesktopComputer,
     bg: "#286F6C",
   },
   {
     name: "React Websites",
-    projects: 3,
+    projects: 4,
     icon: MdWorkspacesOutline,
     bg: "#EEC048",
   },
@@ -80,7 +80,7 @@ export const skills = [
   },
   {
     name: "Tailwind",
-    percentage: 65,
+    percentage: 80,
   },
   {
     name: "Javascript",
@@ -88,7 +88,7 @@ export const skills = [
   },
   {
     name: "React",
-    percentage: 75,
+    percentage: 80,
   },
   {
     name: "React Native",
@@ -163,7 +163,7 @@ export const projects = [
     tech: "React, CSS",
     githubSrc: "https://github.com/BennettHumphrey/Third-Electrical-Site-React/",
     deployedSrc: "https://bennetthumphrey.github.io/Third-Electrical-Site-React/",
-    description: "My third project in the electrical sites series, I made this to reinforce knowledge of the basics after taking a break from coding for a while, and to play with some hover animations. Essentially a re-skin of the second electrical site, but I enjoyed making it.",
+    description: "My third project in the electrical sites series, I made this to reinforce knowledge of the basics after taking a break from coding for a while, and to play with some hover animations. Essentially a re-skin of the second electrical site, but made with React.",
     mainscreenshotSrc: srcsets.electrical1.main,
     screenshots: [...srcsets.electrical1.screenshots],
     showcase: true,
@@ -182,6 +182,19 @@ export const projects = [
     showcase: true,
   },
   {
+    id: 'react3',
+    title: "Blue Fin Sushi",
+    type: "site",
+    tech: "React, TailwindCSS",
+    githubSrc: "https://github.com/BennettHumphrey/Restaurant",
+    deployedSrc: "https://bennetthumphrey.github.io/Restaurant/",
+    description: "My first restaurant site, using a mix of different site designs combined into one. My first time successfully implementing parallax scrolling, and style changes based on scroll position. Got much more comfortable with Tailwind on this project, and also enjoyed working with React again.",
+    videoSrc: "./uber-deliveroo-clone/SVID_20230129_153818_1.mp4",
+    mainscreenshotSrc: srcsets.blueFin.main,
+    screenshots: [...srcsets.blueFin.screenshots],
+    showcase: true,
+  },
+  {
     id: 'html2',
     title: "Second Electrical Site",
     type: "site",
@@ -191,7 +204,7 @@ export const projects = [
     description: "My second finished electrical website, and my first site with multiple pages. I learned about image sliders, which I ended up using 2 of. Also was the first time I tried optimizing page load time, and realized how much images matter for page speed.",
     mainscreenshotSrc: srcsets.electrical2.main,
     screenshots: [...srcsets.electrical2.screenshots],
-    showcase: true,
+    showcase: false,
   },
   {
     id: 'html1',
@@ -222,7 +235,7 @@ export const moreWorksSliderSettings = {
   infinite: true,
   speed: 1000,
   // slidesToShow: 4,
-  slidesToShow: 1,
+  slidesToShow: 2,
   slidesToScroll: 1,
   initialSlide: 0,
   touchMove: true,
@@ -233,14 +246,14 @@ export const moreWorksSliderSettings = {
       breakpoint: 900,
       settings: {
         // slidesToShow: 3,
-        slidesToShow: 1,
+        slidesToShow: 2,
       },
     },
     {
       breakpoint: 650,
       settings: {
         // slidesToShow: 2,
-        slidesToShow: 1,
+        slidesToShow: 2,
       },
     },
   ],

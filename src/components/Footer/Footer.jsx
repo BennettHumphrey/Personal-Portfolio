@@ -24,7 +24,9 @@ const Footer = () => {
                     <p>Victoria, BC, Canada</p>
                 </div>
                 <div className={css.menu}>
-                    <li>Email: bennetthumphrey98@gmail.com</li>
+                    <a href="mailto:bennetthumphrey98@gmail.com">
+                        Email: bennetthumphrey98@gmail.com
+                    </a>
                 </div>
             </div>
         </motion.div>

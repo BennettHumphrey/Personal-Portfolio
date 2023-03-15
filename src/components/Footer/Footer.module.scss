@@ -55,8 +55,10 @@
                                     flex-wrap: wrap;
                                 }
 
-                li {
+                a {
                     cursor: pointer;
+                    color: inherit;
+                    text-decoration: none;
 
                     &:hover {
                         color: $secondary;
