@@ -7,19 +7,19 @@ import { srcsets } from "../../public/srcsets";
 export const projectExperience = [
   {
     name: "HTML & CSS Websites",
-    projects: 6,
+    projects: 9,
     icon: HiOutlineDesktopComputer,
     bg: "#286F6C",
   },
   {
     name: "React Websites",
-    projects: 4,
+    projects: 14,
     icon: MdWorkspacesOutline,
     bg: "#EEC048",
   },
   {
     name: "React Native Apps",
-    projects: 2,
+    projects: 3,
     icon: BiMobileAlt,
     bg: "#F26440",
   },
@@ -31,7 +31,7 @@ export const projectExperience = [
 
 
 export const WhatDoIDo = [
-  "I love helping new, developing businesses by building websites or apps to help reach a wider audience, and make it easier for customers to interact with their favorite brands.",
+  "I love helping new, developing businesses by building websites or apps to help reach a wider audience. This makes it easier for customers to interact with their favorite companies.",
 ];
 
 
@@ -41,11 +41,11 @@ export const WhatDoIDo = [
 
 export const workExp = [
   {
-    place: "Self-Employed, remote",
+    place: "Self-Employed, Remote",
     tenure: "Mar 2022 - Present",
     role: "Web Dev",
     detail:
-      "A web developer, building responsive, optimized websites and apps for businesses, working mainly with React and React Native",
+      "A web developer, building responsive, optimized websites and apps for businesses, working mainly with React and React Native, with Tailwind",
   },
   // {
   //   place: "Self-Employed, Digital",
@@ -76,15 +76,15 @@ export const skills = [
   },
   {
     name: "CSS",
-    percentage: 85,
+    percentage: 90,
   },
   {
     name: "Tailwind",
-    percentage: 80,
+    percentage: 85,
   },
   {
     name: "Javascript",
-    percentage: 80,
+    percentage: 85,
   },
   {
     name: "React",
@@ -92,7 +92,7 @@ export const skills = [
   },
   {
     name: "React Native",
-    percentage: 65,
+    percentage: 55,
   },
 ]
 

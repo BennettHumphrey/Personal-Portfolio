@@ -2,6 +2,7 @@ import React from 'react'
 import css from './Footer.module.scss'
 import { motion } from 'framer-motion'
 import { footerVariants, staggerContainer } from '../../utils/motion'
+import { BsInstagram } from "react-icons/bs";
 
 const Footer = () => {
   return (
@@ -23,9 +24,15 @@ const Footer = () => {
                     <span className="secondaryText">Info</span>
                     <p>Victoria, BC, Canada</p>
                 </div>
-                <div className={css.menu}>
+                <div className={css.email}>
                     <a href="mailto:bennetthumphrey98@gmail.com">
                         Email: bennetthumphrey98@gmail.com
+                    </a>
+                </div>
+                <div className={css.insta}>
+                    <a href="https://www.instagram.com/bennett.humphrey/" target='blank'>
+                        <BsInstagram className={css.icon} />
+                        Instagram
                     </a>
                 </div>
             </div>

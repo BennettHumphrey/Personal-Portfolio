@@ -37,19 +37,19 @@ const Header = () => {
                 <motion.div 
                 variants={fadeIn("right", "tween", 0.3, 1)}
                 className={css.experience} >
-                    <div className='primaryText' >1</div>
+                    <div className='primaryText' >2</div>
                     <div className='secondaryText' >
-                        <div>Year</div>
+                        <div>Years</div>
                         <div>Experience</div>
                     </div>
                 </motion.div>
-                {/* <motion.div
+                <motion.div
                 variants={fadeIn("left", "tween", 0.5, 1)}
                 className={css.certificate}>
-                    <img src="./certificate.png" alt="Certificate" />
-                    <span>Certified Pro</span>
-                    <span>Web Dev</span>
-                </motion.div> */}
+                    {/* <img src="./certificate.png" alt="Certificate" /> */}
+                    <h3>Current rate</h3>
+                    <span>$25CAD / $20USD per hour</span>
+                </motion.div>
             </div>
         </motion.div>
     </section>
