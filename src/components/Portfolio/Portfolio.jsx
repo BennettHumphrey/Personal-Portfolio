@@ -26,7 +26,7 @@ const Portfolio = () => {
             <div className={`flexCenter innerWidth ${css.container}`}>
                 <div className={`flexCenter ${css.heading}`}>
                     <div>
-                        <span className='primaryText' >My latest works</span>
+                        <span className='primaryText' >Electrical Templates</span>
                         {/* <p style={{marginTop: "10px"}} >Great solutions</p> */}
                     </div>
                     <a 
@@ -38,7 +38,7 @@ const Portfolio = () => {
                     onTouchEnd={() => {
                         setShowMoreWorks(true);
                     }}
-                    >Explore More Works</a>
+                    >Explore Other Projects</a>
                 </div>
     
                 <div className={`flexCenter ${css.showcase}`}>
